@@ -9,13 +9,13 @@ public class Program {
         
         Scanner tec = new Scanner(System.in);
 
-        PrintService<Integer> ps = new PrintService<>();
+        PrintService<String> ps = new PrintService<>();
 
         System.out.print("How many values? ");
         int n = Integer.parseInt(tec.nextLine());
 
         for (int i = 0; i < n; i++){
-            int value = Integer.parseInt(tec.nextLine());
+            String value = tec.nextLine();
             ps.addValue(value);
         }
 
